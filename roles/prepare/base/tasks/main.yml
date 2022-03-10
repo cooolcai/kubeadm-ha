@@ -1,5 +1,5 @@
 # 参数校验
-- include_tasks: verify_variables.yml
+- include_tasks: verify_variables.yml #tasks中也可以使用include来引用其它tasks列表。
 
 # 预检内存是否满足要求
 - name: 校验节点资源配置

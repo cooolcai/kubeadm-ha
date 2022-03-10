@@ -67,6 +67,7 @@ vm.max_map_count = 655360
 # 修复ipvs模式下长连接timeout问题 小于900即可
 # refer to https://github.com/moby/moby/issues/31208 
 # ipvsadm -l --timout
+#jinja2模板的使用就是在固定格式中加入判断，选择性的将变量值进行传递？
 {% if kube_proxy_mode == 'ipvs' %}
 net.ipv4.tcp_keepalive_time = 600
 net.ipv4.tcp_keepalive_intvl = 30

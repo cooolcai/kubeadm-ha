@@ -61,7 +61,7 @@
     enabled: yes
     gpgcheck: no
     state: present
-
+#虽然console日志报成功，且后续安装包确实被成功安装。但检查上一步task中增加yum仓库的步骤，却没有成功。
 - name: 安装基础软件包
   yum: 
     name: 

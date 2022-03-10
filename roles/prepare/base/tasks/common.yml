@@ -42,7 +42,7 @@
 
 - name: 设置 systemd-modules-load 配置
   template: 
-    src: 10-k8s-modules.conf.j2
+    src: 10-k8s-modules.conf.j2 #升级内核过程中，使用了jinja2模板
     dest: /etc/modules-load.d/10-k8s-modules.conf
 
 - name: 启动/重启 systemd-modules-load
@@ -53,7 +53,7 @@
 
 - name: 设置系统参数
   template: 
-    src: 95-k8s-sysctl.conf.j2 
+    src: 95-k8s-sysctl.conf.j2 #升级内核过程中，使用了jinja2模板
     dest: /etc/sysctl.d/95-k8s-sysctl.conf
 
 - name: 生效系统参数
