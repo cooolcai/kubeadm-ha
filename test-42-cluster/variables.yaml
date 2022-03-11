@@ -22,3 +22,4 @@ kernel_centos:
   - http://yum.custom.local:12480/yum/kernel-lt-5.4.92-1.el7.elrepo.x86_64.rpm
   - http://yum.custom.local:12480/yum/kernel-lt-devel-5.4.92-1.el7.elrepo.x86_64.rpm
 #test
+#123123123
