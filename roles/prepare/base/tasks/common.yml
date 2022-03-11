@@ -102,7 +102,7 @@
 
 - name: 创建 systemd 配置目录
   file: 
-    name: /etc/systemd/system.conf.d 
+    name: /etc/systemd/system.conf.d
     state: directory 
 
 - name: 设置系统 ulimits
